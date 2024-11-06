@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css" />
+    
   </head>
   <body>
     <div class="weather_app">
@@ -17,15 +18,15 @@
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/149/431/original/JaBCloud.png?1730723965"
         width="50"
       />
-      <form class="search_form">
-        <input class="search_form_input" type="search" placeholder="Enter a city..." required />
+      <form class="search_form" id="search_form">
+        <input class="search_form_input" type="search" placeholder="Enter a city..." required id="searchFormInput"/>
         <input class="search_form_button" type="submit" value="Search" />
       </form>
       </header>
        <main>
         <div class="weather_app_data">
       <div>
-      <h1 class="weather_app_city">Amsterdam</h1>
+      <h1 class="weather_app_city" id="city">Amsterdam</h1>
       <p class="weather_app_details">Tuesday 10:01, fog</br>
 Humidity: <strong>100%</strong>, Wind:<strong> 2.57km/h</strong></p>
 </div>
@@ -43,9 +44,9 @@ Humidity: <strong>100%</strong>, Wind:<strong> 2.57km/h</strong></p>
       <a
         href="https://app.netlify.com/sites/jabweatherapp/overview"
         target="blank"
-        >Netlify</a
-      >
+        >Netlify</a>
     </footer>
     </div>
+ <script src="src/index.js"></script>
   </body>
 </html>
